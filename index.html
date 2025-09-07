@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vishal Server</title>
+
+  <!-- Google Font: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+
+    
+    }
+
+    /* Server Section Box */
+    .iphone {
+      width: 100%;
+      max-width: 400px;
+      min-height: 500px;
+      background: rgba(255, 255, 255, 0.92);
+      border-radius: 25px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+      padding: 25px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      /* Only fade-in animation */
+      animation: fadeInUp 1s ease-out;
+    }
+
+    /* Fade-in from bottom */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px) scale(0.95);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .header {
+      text-align: center;
+    }
+
+    .text-wrapper {
+      font-size: clamp(20px, 4vw, 26px);
+      font-weight: 700;
+      color: #111;
+    }
+
+    .text-wrapper-2 {
+      font-size: clamp(14px, 3vw, 16px);
+      color: #444;
+      margin-top: 6px;
+      font-weight: 500;
+    }
+
+    .text-wrapper-3 {
+      font-size: clamp(12px, 2.5vw, 14px);
+      color: #2a9d8f;
+      margin-top: 4px;
+      font-weight: 600;
+    }
+
+    .menu {
+      display: grid;
+      gap: 12px;
+    }
+
+    .rectangle {
+      padding: 14px;
+      border-radius: 12px;
+      background-color: #f9f9f9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 500;
+      font-size: clamp(14px, 3vw, 16px);
+      color: #333;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.4s ease;
+      text-align: center;
+    }
+
+    .rectangle:hover {
+      background-color: #2a9d8f;
+      color: #fff;
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 6px 14px rgba(42,157,143,0.35);
+    }
+
+    .footer {
+      text-align: center;
+    }
+
+    .text-wrapper-6 {
+      font-size: clamp(12px, 2.5vw, 13px);
+      color: #555;
+      font-weight: 500;
+    }
+
+    /* Tablet - show 2 columns */
+    @media (min-width: 600px) {
+      .menu {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    /* Desktop - larger box */
+    @media (min-width: 1024px) {
+      .iphone {
+        max-width: 500px;
+        min-height: 600px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="iphone">
+    <div class="header">
+      <div class="text-wrapper">VISHAL SERVER</div>
+      <div class="text-wrapper-2">Hello Guys!</div>
+      <div class="text-wrapper-3">Welcome To My Server 👋</div>
+    </div>
+
+    <div class="menu">
+      <!-- Replace file paths with your real material -->
+      <a href="timetable.jpg" download class="rectangle">📘 Time Table</a>
+      <a href="DBMS 1.pdf" download class="rectangle">💾 DBMS</a>
+      <a href="" download class="rectangle">📟 ADLD</a>
+      <a href="AI.pdf" download class="rectangle">🤖 AI</a>
+      <a href="ADLD LAB.pdf" download class="rectangle">📂 ADLD LAB</a>
+      <a href="SQL .pdf" download class="rectangle">📂 SQL LAB</a>
+      <a href="SAC LAB.docx" download class="rectangle">📂 SAC LAB</a>
+    </div>
+
+    <div class="footer">
+      <div class="text-wrapper-6"></div>
+    </div>
+  </div>
+
+</body>
+</html>
